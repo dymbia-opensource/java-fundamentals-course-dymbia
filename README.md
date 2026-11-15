@@ -26,7 +26,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 1: Hola, Java: tu primer código (5 minutos)
 - **Descripción**: Aprende qué es programar y por qué Java es un excelente lenguaje para empezar.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=REEMPLAZAR-VIDEO-01)
+- **Enlace**: [Ver la lección](https://youtu.be/oMY2iObiD0s)
 - **Conclusiones clave**: Programar es dar instrucciones a una computadora; `System.out.println("¡Hola!");` muestra texto en la consola.
 - **Práctica**: [Clic para programar](https://onlinegdb.com/REEMPLAZAR-EDITOR-01)  **¡No es necesario registrarse!**
 - **Archivos**: [`starter-files/leccion-01-hola-java`](starter-files/leccion-01-hola-java/Main.java) · [`completed-examples/leccion-01-hola-java`](completed-examples/leccion-01-hola-java/Main.java) · [Guion](scripts/leccion-01-guion.md)
@@ -40,7 +40,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 3: Operadores y decisiones: ¿pasas de nivel? (7 minutos)
 - **Descripción**: Haz cálculos y toma decisiones con `if / else if / else`.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=REEMPLAZAR-VIDEO-03)
+- **Enlace**: [Ver la lección](https://youtu.be/TmpXYS1uTAk)
 - **Conclusiones clave**: `if (nivel >= 5 && tieneLlave) { }`; `%` da el residuo de una división.
 - **Práctica**: [Clic para programar](https://onlinegdb.com/REEMPLAZAR-EDITOR-03)  **¡Inicio inmediato!**
 - **Archivos**: [`starter-files/leccion-03-decisiones`](starter-files/leccion-03-decisiones/Main.java) · [`completed-examples/leccion-03-decisiones`](completed-examples/leccion-03-decisiones/Main.java) · [Guion](scripts/leccion-03-guion.md)
@@ -68,7 +68,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 7: Encapsulación y arreglos: protege a tu equipo (8 minutos)
 - **Descripción**: Protege los datos con `private`, getters y setters, y guarda varios objetos en un arreglo.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=REEMPLAZAR-VIDEO-07)
+- **Enlace**: [Ver la lección](https://youtu.be/awH2kHWq51E)
 - **Conclusiones clave**: `private int vida;` con `getVida()` y `setVida(...)`; los arreglos empiezan en la posición 0.
 - **Práctica**: [Haz clic para practicar](https://onlinegdb.com/REEMPLAZAR-EDITOR-07)  **¡No necesitas registrarte!**
 - **Archivos**: [`starter-files/leccion-07-encapsulacion-arreglos`](starter-files/leccion-07-encapsulacion-arreglos/Main.java) · [`completed-examples/leccion-07-encapsulacion-arreglos`](completed-examples/leccion-07-encapsulacion-arreglos/Main.java) · [Guion](scripts/leccion-07-guion.md)
@@ -87,9 +87,9 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 | Número de lección | Actividad | Empezar a programar |
 |----------|----------|-------------|
-| 1 | Hola mundo | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-01) |
-| 2 | Variables | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-02) |
-| 3 | Decisiones | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-03) |
+| 1 | Hola mundo | [OnlineGDB](https://www.jdoodle.com/ga/rhzp-7x2h-7x6b) |
+| 2 | Variables | [OnlineGDB](https://www.jdoodle.com/ga/tjtp-vfwd-ufzq) |
+| 3 | Decisiones | [OnlineGDB](https://www.jdoodle.com/ga/rwkh-rs4h-s23f) |
 | 4 | Bucles | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-04) |
 | 5 | Métodos y Scanner | [JDoodle](https://www.jdoodle.com/ga/kupx-w78g-e6db) |
 | 6 | Clases y objetos | [JDoodle](https://www.jdoodle.com/ga/2xxn-p6ur-3f5s) |

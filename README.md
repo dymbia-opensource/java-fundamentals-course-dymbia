@@ -54,16 +54,16 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 5: Métodos y Scanner: conversa con tu programa (8 minutos)
 - **Descripción**: Crea código reutilizable con métodos y obtén datos del jugador con `Scanner`.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=REEMPLAZAR-VIDEO-05)
+- **Enlace**: [Ver la lección](https://youtu.be/0dUFjvZIbdM)
 - **Conclusiones clave**: `static int calcularDanio(int nivel) { return nivel * 5; }`; `Scanner` lee lo que escribe el jugador.
-- **Práctica**: [Haz clic para practicar](https://onlinegdb.com/REEMPLAZAR-EDITOR-05)  **¡No necesitas registrarte!**
+- **Práctica**: [Haz clic para practicar](https://www.jdoodle.com/ga/kupx-w78g-e6db)  **¡No necesitas registrarte!**
 - **Archivos**: [`starter-files/leccion-05-metodos-scanner`](starter-files/leccion-05-metodos-scanner/Main.java) · [`completed-examples/leccion-05-metodos-scanner`](completed-examples/leccion-05-metodos-scanner/Main.java) · [Guion](scripts/leccion-05-guion.md)
 
 ### Lección 6: Clases y objetos: fabrica tus personajes (8 minutos)
 - **Descripción**: Construye clases con atributos, constructor y métodos, y crea objetos con `new`.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=REEMPLAZAR-VIDEO-06)
+- **Enlace**: [Ver la lección](https://youtu.be/TGmnvwiVizw)
 - **Conclusiones clave**: Una clase es un plano y un objeto es lo que se fabrica con ese plano; `new Personaje("Luna", 1)`.
-- **Práctica**: [Haz clic para practicar](https://onlinegdb.com/REEMPLAZAR-EDITOR-06)  **¡No necesitas registrarte!**
+- **Práctica**: [Haz clic para practicar](https://www.jdoodle.com/ga/2xxn-p6ur-3f5s)  **¡No necesitas registrarte!**
 - **Archivos**: [`starter-files/leccion-06-clases-objetos`](starter-files/leccion-06-clases-objetos/Main.java) · [`completed-examples/leccion-06-clases-objetos`](completed-examples/leccion-06-clases-objetos/Main.java) · [Guion](scripts/leccion-06-guion.md)
 
 ### Lección 7: Encapsulación y arreglos: protege a tu equipo (8 minutos)
@@ -91,8 +91,8 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 | 2 | Variables | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-02) |
 | 3 | Decisiones | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-03) |
 | 4 | Bucles | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-04) |
-| 5 | Métodos y Scanner | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-05) |
-| 6 | Clases y objetos | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-06) |
+| 5 | Métodos y Scanner | [JDoodle](https://www.jdoodle.com/ga/kupx-w78g-e6db) |
+| 6 | Clases y objetos | [JDoodle](https://www.jdoodle.com/ga/2xxn-p6ur-3f5s) |
 | 7 | Encapsulación y arreglos | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-07) |
 | 8 | Programa POO: Arena Pixel | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-08) |
 

@@ -82,7 +82,8 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ## Recursos adicionales
 - **Código fuente completo**: [Repositorio de GitHub](https://github.com/ORGANIZACION/java-fundamentals-course-dymbia)
-- **Todas las actividades prácticas**:
+
+### Todas las actividades prácticas
 
 | Número de lección | Actividad | Empezar a programar |
 |----------|----------|-------------|
@@ -127,7 +128,7 @@ java-fundamentals-course-dymbia/
 
 **¡Gracias por completar el curso!**
 
----
+
 
 ## 👥 Elaboración
 Universidad Peruana de Ciencias Aplicadas  
@@ -141,10 +142,15 @@ NRC : 7742
 **Líder del equipo**: Yamil Jared Tejada Pumacayo
 
 **Integrantes del equipo**:
+
 - Cristina Marcela Yarleque Ruiz
+
 - Miguel Sanca Condori
+
 - Benjamin Solorzano Sullca
+
 - Yamil Jared Tejada Pumacayo
+
 - Andy Alfredo Hipolito Salcedo Muñoz
 
 **Fecha de entrega**: 15/11/2026

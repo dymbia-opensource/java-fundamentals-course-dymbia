@@ -33,9 +33,9 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 2: Variables: la ficha de tu personaje (6 minutos)
 - **Descripción**: Aprende a almacenar datos en Java usando variables.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=REEMPLAZAR-VIDEO-02)
+- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=jCrOzrxM2og)
 - **Conclusiones clave**: Usa `String`, `int`, `double` y `boolean`; declara como `int nivel = 1;`.
-- **Práctica**: [Clic para programar](https://onlinegdb.com/REEMPLAZAR-EDITOR-02)  **¡No es necesario registrarse!**
+- **Práctica**: [Clic para programar](https://www.jdoodle.com/online-java-compiler) **¡No es necesario registrarse!**
 - **Archivos**: [`starter-files/leccion-02-variables`](starter-files/leccion-02-variables/Main.java) · [`completed-examples/leccion-02-variables`](completed-examples/leccion-02-variables/Main.java) · [Guion](scripts/leccion-02-guion.md)
 
 ### Lección 3: Operadores y decisiones: ¿pasas de nivel? (7 minutos)

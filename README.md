@@ -47,7 +47,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 4: Bucles: repite sin cansarte (6 minutos)
 - **Descripción**: Repite tareas con `for` y `while`, y aprende a evitar los bucles infinitos.
-- **Enlace**: [Ver la lección](https://www.youtube.com/watch?v=REEMPLAZAR-VIDEO-04)
+- **Enlace**: [Ver la lección](https://youtu.be/oMY2iObiD0s)
 - **Conclusiones clave**: `for (int i = 0; i < 5; i++) { }`; un `while` necesita algo que lo termine.
 - **Práctica**: [Clic para programar](https://onlinegdb.com/REEMPLAZAR-EDITOR-04)  **¡Inicio inmediato!**
 - **Archivos**: [`starter-files/leccion-04-bucles`](starter-files/leccion-04-bucles/Main.java) · [`completed-examples/leccion-04-bucles`](completed-examples/leccion-04-bucles/Main.java) · [Guion](scripts/leccion-04-guion.md)

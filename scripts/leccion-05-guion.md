@@ -1,0 +1,43 @@
+# Lección 5: Métodos y Scanner: conversa con tu programa
+
+- **Duración objetivo:** 8 minutos
+- **Editor en línea:** JDoodle (modo **Interactive** activado para `Scanner`)
+- **Código:** `leccion-05-metodos-scanner` (se parte del starter y se llega al completed)
+- **Diapositivas:** 21 a 25 de `Java_desde_cero.pptx`
+- **Objetivos de aprendizaje:**
+  1. Crear métodos con parámetros y valor de retorno.
+  2. Obtener datos del jugador con `Scanner` (`nextLine` y `nextInt`).
+  3. Reconocer el error del salto de línea al mezclar `nextInt` y `nextLine`.
+
+> Nota de grabación: en JDoodle, deja **Interactive** activado y escribe las respuestas en el panel **Output** mientras el programa se ejecuta.
+
+| Tiempo | Pantalla | Narración |
+|--------|----------|-----------|
+| 0:00–0:25 | [EN PPT: Diapositiva 1/5 – portada] | Piensa en el botón de una habilidad de un videojuego. Cada vez que lo presionas, se ejecuta una acción concreta. No necesitamos copiar todas las instrucciones cada vez: podemos agruparlas y darles un nombre. Eso es un método. Y hoy también haremos que el programa pregunte tu nombre y tu nivel para responderte. |
+| 0:25–0:55 | [EN PPT: Diapositiva 2/5 – repaso y lo que vas a construir (3 tarjetas)] | Ya aprendiste a repetir instrucciones con for y while. Hoy vamos a ordenar el programa en bloques que puedes reutilizar y haremos que reciba información desde el teclado. Al final tendrás un método que saluda, otro que calcula el daño de tu personaje y un programa que te pregunta tu nombre y tu nivel para responderte. |
+| 0:55–1:40 | [EN PPT: Diapositiva 3/5 – máquina ENTRA → PROCESO → SALE; luego señalar las 4 partes de la firma del método] | Un método agrupa instrucciones que realizan una tarea y les pone un nombre. Cuando lo necesitas, lo llamas y se ejecuta. Piensa en una máquina de jugos: recibe fruta, hace su proceso y te entrega un jugo. En Java, lo que recibe el método se llama parámetro, y lo que entrega se devuelve con la palabra return. Otra ventaja: si quieres cambiar el saludo, lo cambias en un solo lugar y todas las llamadas usan la versión nueva. Así main no se convierte en una lista interminable de instrucciones. |
+| 1:40–2:35 | [EN EDITOR: abrir starter-files/leccion-05-metodos-scanner/Main.java; escribir static void saludar(String nombre)] | Abrimos JDoodle en el navegador, elegimos Java y pegamos el archivo de la lección 5. Verás algunos comentarios TODO: son los espacios que vamos a completar. Arriba de main escribimos static void saludar y, entre paréntesis, String nombre. Por ahora, la palabra static simplemente nos permite usar el método desde main; la entenderemos mejor cuando veamos clases. void significa que este método no devuelve ningún valor: solo realiza una acción. Y nombre es el parámetro, una variable que recibirá el texto que le enviemos. Dentro de las llaves escribimos un println con «¡Hola, », más nombre, más el signo de cierre. Listo: tenemos un método capaz de saludar a cualquier personaje. |
+| 2:35–3:25 | [EN EDITOR: escribir static int calcularDanio(int nivel) { return nivel * 5; }] | Ahora creamos calcularDanio. Esta vez, antes del nombre escribimos int, porque el método va a devolver un número entero. Recibe un parámetro llamado nivel y, dentro, escribimos return nivel por cinco. La instrucción return entrega el resultado a quien llamó al método. Si el nivel es 3, el daño será 15. Compara los dos métodos: saludar hace algo y usa void; calcularDanio calcula algo y devuelve un int. La palabra que va antes del nombre te dice qué esperar del método. Por cierto, escribimos Danio sin eñe porque en los nombres de código es buena práctica evitar la eñe y las tildes. |
+| 3:25–4:00 | [EN EDITOR: escribir llamadas de prueba saludar("Luna"); y println(calcularDanio(3)); ejecutar; cambiar a "Kai" y 4; ejecutar] | Para usar un método, escribimos su nombre y, entre paréntesis, los valores que queremos enviar. Eso se llama llamar al método. Dentro de main probamos saludar con «Luna» y mostramos calcularDanio con nivel 3. Ejecuta: aparece el saludo y el daño es 15. Cambia a «Kai» y nivel 4: ahora el daño es 20. Mismo método, distintos datos y sin repetir código. Estas dos líneas son solo una prueba; en un momento las cambiaremos por datos que escribe el jugador. |
+| 4:00–4:50 | [EN EDITOR: resaltar import java.util.Scanner;, Scanner entrada = new Scanner(System.in); y entrada.close();] | Ahora haremos que el programa converse contigo. Para leer lo que escribe el jugador usamos Scanner, una herramienta que ya viene incluida en Java. Al inicio del archivo está la línea import java.util.Scanner: le dice a Java dónde encontrarla. Dentro de main ya tenemos Scanner entrada igual a new Scanner, con System.in entre paréntesis. System.in representa el teclado. Imagina que entrada es un asistente que escucha lo que escribes en la consola y se lo pasa al programa. Al final verás entrada.close(): cuando terminamos de leer, cerramos el Scanner, como quien apaga el micrófono al terminar de hablar. |
+| 4:50–5:45 | [EN EDITOR: escribir print + nextLine (nombre) y print + nextInt (nivel); borrar las llamadas de prueba; escribir saludar(nombre) y "Tu daño es " + calcularDanio(nivel); ejecutar con Ana María / 3] | Primero preguntamos el nombre con System.out.print. A diferencia de println, print deja el cursor en la misma línea, así la respuesta aparece al lado de la pregunta. Luego escribimos String nombre igual a entrada.nextLine. nextLine lee toda la línea hasta que presionas Enter, así que también funciona con nombres de dos palabras, como Ana María. Después preguntamos el nivel y escribimos int nivel igual a entrada.nextInt, que lee un número entero. Finalmente borramos las líneas de prueba, llamamos a saludar con el nombre recibido y mostramos «Tu daño es» más calcularDanio con el nivel. Presiona Execute y, en el panel Output, escribe tu nombre, Enter, luego un número y Enter. Fíjate que el modo Interactive esté activado: así el programa te pregunta mientras se ejecuta. |
+| 5:45–6:40 | [EN EDITOR: invertir el orden (nextInt antes de nextLine); ejecutar; resaltar en rojo el saludo "¡Hola, !" vacío; restaurar el orden; ejecutar de nuevo] | Ahora un error clásico, y lo vamos a provocar a propósito. Invierte el orden: pide primero el nivel con nextInt y después el nombre con nextLine. Ejecuta, escribe 3 y presiona Enter. ¿Viste? El programa no te dejó escribir el nombre: pasó directo al saludo con el nombre vacío. ¿Qué ocurrió? nextInt leyó el 3, pero dejó pendiente el Enter. Luego nextLine encontró ese Enter y lo tomó como tu respuesta. Hay dos soluciones. La más sencilla: leer primero el texto y después el número, como en nuestro ejemplo. La otra: agregar un entrada.nextLine() extra justo después de nextInt para limpiar ese Enter. Volvemos al orden correcto y ejecutamos otra vez. |
+| 6:40–7:10 | [EN PPT: diapositiva 5/5 – reto; luego EN EDITOR: dejar zona para método sumar] | Tu turno. Pausa el video y crea un método llamado sumar que reciba dos números enteros y devuelva su suma. Pista: el tipo de retorno es int y necesitarás return. Después llámalo desde main y muestra el resultado en la consola. [PAUSA DE GRABACIÓN: dejar el reto visible entre 5 y 8 segundos]. |
+| 7:10–7:35 | [EN EDITOR: mostrar static int sumar(int a, int b) { return a + b; } y una llamada] | Una solución posible es static int sumar, con los parámetros a y b, y dentro return a más b. Luego puedes mostrar sumar con dos valores, por ejemplo 4 y 6. El resultado será 10. Lo importante es que el método reciba los datos y devuelva el resultado esperado. |
+| 7:35–8:00 | [EN PPT: diapositiva 5/5 – resumen y avance] | Tip de oro: cada método debe tener una sola responsabilidad y un nombre que diga lo que hace. Repasemos: un método agrupa instrucciones, los parámetros son sus datos de entrada, return devuelve un resultado y Scanner lee lo que escribe el jugador. En la siguiente lección reuniremos los datos y las acciones de cada personaje en clases y objetos. |
+
+## Pausa interactiva
+"Pausa el video y crea un método llamado `sumar` que reciba dos números enteros y devuelva su suma. Pista: el tipo de retorno es `int`."
+
+## Descripción sugerida para YouTube
+```
+Lección 5 de 8: Métodos y entrada por consola con Scanner.
+Practica aquí (sin instalar nada): [ENLACE A JDOODLE PRECARGADO]
+Código del curso: [ENLACE AL REPOSITORIO]
+```
+
+## Lista de verificación
+- [ ] Probar la entrada por consola con acentos (Ana María) antes de grabar.
+- [ ] Las llamadas de prueba con "Luna" y nivel 3 se reemplazan por la entrada con `Scanner`.
+- [ ] El error de `nextInt` seguido de `nextLine` se provoca y se corrige en cámara.
+- [ ] Sin nombres de autores en pantalla.

@@ -1,6 +1,4 @@
-// Lección 8: Proyecto final "Arena Pixel" (solución)
-import java.util.Scanner;
-
+// Lección 8: Proyecto final "Arena Pixel" (versión automática sin Scanner)
 class Jugador {
     private String nombre;
     private int nivel;
@@ -51,65 +49,55 @@ class Jugador {
 
 public class Main {
 
-    // Pide un número de jugador y repite hasta que sea válido
-    static int pedirJugador(Scanner entrada, Jugador[] jugadores) {
-        int numero = 0;
-        while (numero < 1 || numero > jugadores.length) {
-            System.out.print("Elige un jugador (1-" + jugadores.length + "): ");
-            numero = entrada.nextInt();
+    static void mostrarEquipo(Jugador[] jugadores) {
+        for (int i = 0; i < jugadores.length; i++) {
+            System.out.print((i + 1) + ". ");
+            jugadores[i].mostrarFicha();
         }
-        return numero - 1;
+    }
+
+    static void realizarDuelo(Jugador a, Jugador b) {
+        System.out.println("\n--- DUELO: " + a.getNombre() + " vs " + b.getNombre() + " ---");
+        if (a == b) {
+            System.out.println("Elige dos jugadores distintos.");
+        } else if (!a.estaVivo() || !b.estaVivo()) {
+            System.out.println("Alguien está fuera de combate. ¡Entrénalo primero!");
+        } else {
+            int danioA = a.calcularAtaque();
+            b.recibirDanio(danioA);
+            System.out.println(a.getNombre() + " ataca: " + danioA + " de daño.");
+
+            if (b.estaVivo()) {
+                int danioB = b.calcularAtaque();
+                a.recibirDanio(danioB);
+                System.out.println(b.getNombre() + " contraataca: " + danioB + " de daño.");
+            } else {
+                System.out.println(b.getNombre() + " cayó en combate.");
+            }
+        }
     }
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        // 1. Creamos el arreglo con 3 jugadores listos
         Jugador[] jugadores = new Jugador[3];
+        jugadores[0] = new Jugador("Luna");
+        jugadores[1] = new Jugador("Kai");
+        jugadores[2] = new Jugador("Nova");
 
-        for (int i = 0; i < jugadores.length; i++) {
-            System.out.print("Nombre del jugador " + (i + 1) + ": ");
-            jugadores[i] = new Jugador(entrada.nextLine());
-        }
+        System.out.println("=== EQUIPO INICIAL ===");
+        mostrarEquipo(jugadores);
 
-        int opcion = 0;
-        while (opcion != 4) {
-            System.out.println("\n1) Ver jugadores  2) Entrenar  3) Duelo  4) Salir");
-            opcion = entrada.nextInt();
-            // Si agregas una opción que lea texto con nextLine() (por ejemplo, un jugador nuevo),
-            // escribe antes entrada.nextLine(); para limpiar el salto de línea que dejó nextInt().
+        // 2. Entrenamos a Luna (sube a nivel 2)
+        System.out.println("\n=== ENTRENAMIENTO ===");
+        jugadores[0].entrenar();
+        System.out.println(jugadores[0].getNombre() + " entrenó y ahora es nivel " + jugadores[0].getNivel());
 
-            if (opcion == 1) {
-                for (int i = 0; i < jugadores.length; i++) {
-                    System.out.print((i + 1) + ". ");
-                    jugadores[i].mostrarFicha();
-                }
-            } else if (opcion == 2) {
-                Jugador j = jugadores[pedirJugador(entrada, jugadores)];
-                j.entrenar();
-                System.out.println(j.getNombre() + " entrenó y ahora es nivel " + j.getNivel());
-            } else if (opcion == 3) {
-                Jugador a = jugadores[pedirJugador(entrada, jugadores)];
-                Jugador b = jugadores[pedirJugador(entrada, jugadores)];
-                if (a == b) {
-                    System.out.println("Elige dos jugadores distintos.");
-                } else if (!a.estaVivo() || !b.estaVivo()) {
-                    System.out.println("Alguien está fuera de combate. ¡Entrénalo primero!");
-                } else {
-                    int danioA = a.calcularAtaque();
-                    b.recibirDanio(danioA);
-                    System.out.println(a.getNombre() + " ataca: " + danioA + " de daño.");
-                    if (b.estaVivo()) {
-                        int danioB = b.calcularAtaque();
-                        a.recibirDanio(danioB);
-                        System.out.println(b.getNombre() + " contraataca: " + danioB + " de daño.");
-                    } else {
-                        System.out.println(b.getNombre() + " cayó en combate.");
-                    }
-                }
-            } else if (opcion != 4) {
-                System.out.println("Opción no válida.");
-            }
-        }
-        System.out.println("¡Gracias por jugar!");
-        entrada.close();
+        // 3. Simulamos un duelo entre Luna (nivel 2) y Kai (nivel 1)
+        realizarDuelo(jugadores[0], jugadores[1]);
+
+        // 4. Mostramos el estado final de todos
+        System.out.println("\n=== ESTADO FINAL ===");
+        mostrarEquipo(jugadores);
+        System.out.println("\n¡Gracias por jugar!");
     }
 }

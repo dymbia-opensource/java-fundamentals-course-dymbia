@@ -87,14 +87,14 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 | Número de lección | Actividad | Empezar a programar |
 |----------|----------|-------------|
-| 1 | Hola mundo | [OnlineGDB](https://www.jdoodle.com/ga/rhzp-7x2h-7x6b) |
-| 2 | Variables | [OnlineGDB](https://www.jdoodle.com/ga/tjtp-vfwd-ufzq) |
-| 3 | Decisiones | [OnlineGDB](https://www.jdoodle.com/ga/rwkh-rs4h-s23f) |
-| 4 | Bucles | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-04) |
+| 1 | Hola mundo | [JDoodle](https://www.jdoodle.com/ga/rhzp-7x2h-7x6b) |
+| 2 | Variables | [JDoodle](https://www.jdoodle.com/ga/tjtp-vfwd-ufzq) |
+| 3 | Decisiones | [JDoodle](https://www.jdoodle.com/ga/rwkh-rs4h-s23f) |
+| 4 | Bucles | [JDoodle](https://www.jdoodle.com/ga/qkf5-5up3-d2z2) |
 | 5 | Métodos y Scanner | [JDoodle](https://www.jdoodle.com/ga/kupx-w78g-e6db) |
 | 6 | Clases y objetos | [JDoodle](https://www.jdoodle.com/ga/2xxn-p6ur-3f5s) |
-| 7 | Encapsulación y arreglos | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-07) |
-| 8 | Programa POO: Arena Pixel | [OnlineGDB](https://onlinegdb.com/REEMPLAZAR-EDITOR-08) |
+| 7 | Encapsulación y arreglos | [JDoodle](https://www.jdoodle.com/ga/8v9k-bfg6-vpqz) |
+| 8 | Programa POO: Arena Pixel | [JDoodle](https://www.jdoodle.com/ga/x7zb-db26-gpbv) |
 
 - **Documentación oficial para seguir aprendiendo**: [Documentación de Java (Oracle)](https://docs.oracle.com/en/java/)
 
